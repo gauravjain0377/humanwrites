@@ -27,13 +27,25 @@ Based on [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikip
 
 ## Installation
 
-### One command (recommended)
+### Method 1 — Upload directly in Claude *(easiest, no terminal needed)*
+
+1. [Download `SKILL.md`](https://raw.githubusercontent.com/gauravjain0377/humanwrites/main/SKILL.md) — right-click → Save As
+2. Open [claude.ai](https://claude.ai) → click your profile → **Customize Claude**
+3. Go to **Skills** → click **+** → **Upload a skill**
+4. Select the `SKILL.md` file you just downloaded
+5. Done — use `/humanwrites` in any Claude conversation
+
+> **That's it.** No terminal, no commands. Just download one file and upload it.
+
+---
+
+### Method 2 — Terminal install *(Claude Code / developers)*
 
 ```bash
 git clone https://github.com/gauravjain0377/humanwrites.git ~/.claude/skills/humanwrites
 ```
 
-### Manual (skill file only)
+**Manual (skill file only):**
 
 ```bash
 mkdir -p ~/.claude/skills/humanwrites
@@ -41,7 +53,7 @@ curl -o ~/.claude/skills/humanwrites/SKILL.md \
   https://raw.githubusercontent.com/gauravjain0377/humanwrites/main/SKILL.md
 ```
 
-### Update to the latest version
+**Update to the latest version:**
 
 ```bash
 cd ~/.claude/skills/humanwrites && git pull
@@ -51,7 +63,7 @@ cd ~/.claude/skills/humanwrites && git pull
 
 ## Usage
 
-In Claude Code, invoke the skill:
+Once installed, use it in any Claude conversation:
 
 ```
 /humanwrites
@@ -59,7 +71,7 @@ In Claude Code, invoke the skill:
 [paste your AI-generated text here]
 ```
 
-Or ask Claude directly:
+Or just ask naturally:
 
 ```
 Please humanize this text: [your text]
@@ -96,70 +108,35 @@ Before a full pass, check for these red flags:
 
 ---
 
-## 33 Patterns Detected
+## What Gets Detected
 
-### Content Patterns
+**33 patterns across 6 categories.** The full skill file has detailed before/after examples for every one. Here's a quick map:
 
-| # | Pattern | Before → After |
-|---|---------|----------------|
-| 1 | **Significance inflation** | "marking a pivotal moment in the evolution of..." → "was established in 1989 to collect regional statistics" |
-| 2 | **Notability name-dropping** | "cited in NYT, BBC, FT, and The Hindu" → "In a 2024 NYT interview, she argued..." |
-| 3 | **Superficial -ing analyses** | "symbolizing... reflecting... showcasing..." → Remove or provide an actual source |
-| 4 | **Promotional language** | "nestled within the breathtaking region" → "is a town in the Gonder region" |
-| 5 | **Vague attributions** | "Experts believe it plays a crucial role" → "according to a 2019 survey by..." |
-| 6 | **Formulaic challenges** | "Despite challenges... continues to thrive" → Replace with specific facts |
+### 📌 Content
+AI inflates importance, fakes notability, and adds fake depth with `-ing` phrases.
+> *Words to watch:* `pivotal`, `testament`, `serves as a reminder`, `symbolizing`, `reflecting`, `showcasing`, `Experts believe`, `despite challenges`
 
-### Language Patterns
+### 📌 Language
+AI avoids simple words, repeats ideas with synonyms, and forces "impressive" structure.
+> *Words to watch:* `Additionally`, `landscape`, `vibrant`, `delve`, `underscore`, `boasts`, `It's not just X it's Y`, `from X to Y`
 
-| # | Pattern | Before → After |
-|---|---------|----------------|
-| 7 | **AI vocabulary** | "testament... landscape... showcasing..." → plain, direct words |
-| 8 | **Copula avoidance** | "serves as... features... boasts" → "is... has" |
-| 9 | **Negative parallelisms** | "It's not just X, it's Y" → State the point directly |
-| 10 | **Rule of three** | "innovation, inspiration, and insights" → use the natural number of items |
-| 11 | **Synonym cycling** | "protagonist... main character... central figure..." → pick one and stick to it |
-| 12 | **False ranges** | "from the Big Bang to dark matter" → list the topics directly |
+### 📌 Style
+AI overuses formatting signals to look organized and punchy.
+> *Watch for:* em dashes (—) everywhere · **bolded every phrase** · 🚀 emojis in content · Title Case Every Heading · `cross-functional` hyphenation
 
-### Style Patterns
+### 📌 Communication
+AI chatbot phrases that get copy-pasted into real content.
+> *Watch for:* `I hope this helps!` · `Let me know if you'd like...` · `Great question!` · `As of my last training update...`
 
-| # | Pattern | Before → After |
-|---|---------|----------------|
-| 13 | **Em dash overuse** | "institutions—not people—yet this continues—" → commas or periods |
-| 14 | **Boldface overuse** | "**OKRs**, **KPIs**, **BMC**" → "OKRs, KPIs, BMC" |
-| 15 | **Inline-header lists** | "**Performance:** Performance improved" → rewrite as prose |
-| 16 | **Title Case Headings** | "Strategic Negotiations And Partnerships" → "Strategic negotiations and partnerships" |
-| 17 | **Emojis** | "🚀 Launch Phase: 💡 Key Insight:" → plain text |
-| 18 | **Curly quotes** | `said "the project"` → `said "the project"` |
-| 25 | **Hyphenated word pairs** | "cross-functional, data-driven, client-facing" → drop hyphens from common pairs |
+### 📌 Filler & Hedging
+AI pads length without adding meaning.
+> *Words to watch:* `In order to`, `Due to the fact that`, `could potentially possibly`, `The future looks bright`, `Exciting times lie ahead`
 
-### Communication Patterns
+### 📌 New patterns (v2.0.3)
+Freshly added — often missed by other tools.
+> *Watch for:* `It was determined that` (passive) · `Furthermore / Moreover` openers · `In conclusion` closers · rhetorical questions as transitions · `It is worth noting` · `has become / have emerged` (present perfect overuse)
 
-| # | Pattern | Before → After |
-|---|---------|----------------|
-| 19 | **Chatbot artifacts** | "I hope this helps! Let me know if..." → Remove entirely |
-| 20 | **Cutoff disclaimers** | "While details are limited based on available sources..." → Find a source or remove it |
-| 21 | **Sycophantic tone** | "Great question! You're absolutely right!" → Respond directly |
-
-### Filler and Hedging
-
-| # | Pattern | Before → After |
-|---|---------|----------------|
-| 22 | **Filler phrases** | "In order to", "Due to the fact that" → "To", "Because" |
-| 23 | **Excessive hedging** | "could potentially possibly be argued that" → "may" |
-| 24 | **Generic conclusions** | "The future looks bright. Exciting times lie ahead." → Specific plans or facts |
-
-### New in v3.0.0
-
-| # | Pattern | Before → After |
-|---|---------|----------------|
-| 26 | **Passive voice overuse** | "It was determined that..." → "Researchers found..." |
-| 27 | **Filler transition words** | "Furthermore... Moreover... Nevertheless..." → Cut or rewrite |
-| 28 | **"In conclusion" closers** | "In conclusion, the research shows..." → State the point directly |
-| 29 | **Rhetorical questions** | "But what does this mean for us?" → Just answer it |
-| 30 | **Over-explaining the obvious** | Defining "AI" for a tech audience → Remove the definition |
-| 31 | **Numbered list overuse** | Everything becomes 1. 2. 3. → prose when it flows better |
-| 32 | **"It is worth noting"** | "It should be noted that..." → State it directly |
-| 33 | **Present perfect overuse** | "has become... have emerged... has evolved" → past or present tense |
+> Full before/after examples for all 33 patterns are in [`SKILL.md`](SKILL.md).
 
 ---
 
@@ -216,10 +193,14 @@ Found a new AI writing pattern? Open a PR:
 
 ---
 
-## References
+## Further Reading
 
-- [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) — Primary source
-- [WikiProject AI Cleanup](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup) — Maintaining organization
+If you want to go deeper on why AI writing sounds the way it does:
+
+- [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) — the most complete documented list of AI writing patterns, maintained by WikiProject AI Cleanup. This is the primary research source behind this skill.
+- [WikiProject AI Cleanup](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup) — the Wikipedia editors working to identify and fix AI-generated articles. Their observations are the empirical foundation for most patterns here.
+- [Key insight](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing#Key_characteristics): *"LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."* — this is why AI writing feels generic.
+- [How to detect AI-generated text](https://en.wikipedia.org/wiki/AI_detection_software) — background on detection methods, and why pattern-based editing beats automated detectors for actual writing quality.
 
 ---
 

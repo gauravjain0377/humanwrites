@@ -563,73 +563,60 @@ Provide:
 
 ## Full Example
 
-**Before (AI-sounding):**
-> Great question! Here is an essay on this topic. I hope this helps!
+**Before (AI-sounding press release):**
+> We are thrilled to announce the launch of NexaFlow — a groundbreaking platform that serves as a testament to our commitment to innovation. In today's rapidly evolving landscape, cross-functional teams need tools that not only streamline workflows but also foster collaboration, enhance productivity, and cultivate a culture of alignment.
 >
-> AI-assisted coding serves as an enduring testament to the transformative potential of large language models, marking a pivotal moment in the evolution of software development. In today's rapidly evolving technological landscape, these groundbreaking tools—nestled at the intersection of research and practice—are reshaping how engineers ideate, iterate, and deliver, underscoring their vital role in modern workflows.
+> NexaFlow boasts a vibrant array of features designed to empower modern teams. It's not just about task management — it's about transforming how organizations operate at scale. The platform stands as a pivotal milestone in our journey toward delivering seamless, intuitive, and data-driven experiences.
 >
-> At its core, the value proposition is clear: streamlining processes, enhancing collaboration, and fostering alignment. It's not just about autocomplete; it's about unlocking creativity at scale, ensuring that organizations can remain agile while delivering seamless, intuitive, and powerful experiences to users. The tool serves as a catalyst. The assistant functions as a partner. The system stands as a foundation for innovation.
+> - 🚀 **Speed:** Tasks are completed significantly faster, reducing friction across all departments
+> - 💡 **Intelligence:** AI-powered insights showcase the intricate interplay between data and decision-making
+> - ✅ **Adoption:** It has been shown that teams using NexaFlow see measurable improvements in output quality
 >
-> Industry observers have noted that adoption has accelerated from hobbyist experiments to enterprise-wide rollouts, from solo developers to cross-functional teams. The technology has been featured in The New York Times, Wired, and The Verge. Additionally, the ability to generate documentation, tests, and refactors showcases how AI can contribute to better outcomes, highlighting the intricate interplay between automation and human judgment.
->
-> - 💡 **Speed:** Code generation is significantly faster, reducing friction and empowering developers.
-> - 🚀 **Quality:** Output quality has been enhanced through improved training, contributing to higher standards.
-> - ✅ **Adoption:** Usage continues to grow, reflecting broader industry trends.
->
-> While specific details are limited based on available information, it could potentially be argued that these tools might have some positive effect. Despite challenges typical of emerging technologies—including hallucinations, bias, and accountability—the ecosystem continues to thrive. In order to fully realize this potential, teams must align with best practices.
->
-> In conclusion, the future looks bright. Exciting times lie ahead as we continue this journey toward excellence. Let me know if you’d like me to expand on any section!
+> Industry observers have noted that this represents a key turning point in project management software. Furthermore, it is worth noting that NexaFlow has already garnered coverage from leading publications. In conclusion, the future of work is here. We hope this resonates with you — let us know if you'd like to learn more!
 
 **Draft rewrite:**
-> AI coding assistants speed up some tasks. In a 2024 study by Google, developers using Codex completed simple functions 55% faster than a control group, but showed no improvement on debugging or architectural decisions.
+> NexaFlow is a project management tool that launched this week. It tracks tasks, shows team workload at a glance, and connects with Slack and GitHub.
 >
-> The tools are good at boilerplate: config files, test scaffolding, repetitive refactors. They are bad at knowing when they are wrong. I have mass-accepted suggestions that compiled, passed lint, and still did the wrong thing because I stopped paying attention.
+> We built it because status updates at most teams live in three places — a standup, a ticket tracker, and someone's spreadsheet. NexaFlow pulls that into one view.
 >
-> Mira, an engineer at a fintech startup I interviewed, said she uses Copilot "like autocomplete for boring code" but reviews every line before committing. Jake, a senior dev at a larger company, disabled it after it kept suggesting patterns from a deprecated internal library.
->
-> The productivity claims are hard to verify. GitHub says Copilot users "accept 30% of suggestions," but acceptance is not correctness, and correctness is not value. The 2024 Uplevel study found no statistically significant difference in pull-request throughput between teams with and without AI assistants.
->
-> None of this means the tools are useless. It means they are tools. They do not replace judgment, and they do not eliminate the need for tests. If you do not have tests, you cannot tell whether the suggestion is right.
+> Free up to 10 users. Paid plans start at $12 per seat per month. 14-day trial, no card required.
 
 **What makes the below so obviously AI generated?**
-- The rhythm is still a bit too tidy (clean contrasts, evenly paced paragraphs).
-- The named people and study citations can read like plausible-but-made-up placeholders unless they're real and sourced.
-- The closer leans a touch slogan-y ("If you do not have tests...") rather than sounding like a person talking.
+- Too compressed — reads like a product spec, not an announcement anyone would care about reading.
+- The "we built it because" framing is good but the ending drops off abruptly.
+- No personality or point of view — it could be any product launch.
 
 **Now make it not obviously AI generated.**
-> AI coding assistants can make you faster at the boring parts. Not everything. Definitely not architecture.
+> NexaFlow launched this week. It's a project management tool, and I know that sounds like something you've heard before.
 >
-> They're great at boilerplate: config files, test scaffolding, repetitive refactors. They're also great at sounding right while being wrong. I've accepted suggestions that compiled, passed lint, and still missed the point because I stopped paying attention.
+> The specific problem we kept running into: status updates lived in too many places at once. Standup covered one thing, the ticket tracker another, and someone's spreadsheet a third. We tried to put those in one place without adding a fourth thing to check.
 >
-> People I talk to tend to land in two camps. Some use it like autocomplete for chores and review every line. Others disable it after it keeps suggesting patterns they don't want. Both feel reasonable.
->
-> The productivity metrics are slippery. GitHub can say Copilot users "accept 30% of suggestions," but acceptance isn't correctness, and correctness isn't value. If you don't have tests, you're basically guessing.
+> Whether that resonates probably depends on how bad your current setup is. Free up to 10 users. Paid plans start at $12/seat — there's a 14-day trial if you want to find out.
 
 **Changes made:**
-- Removed chatbot artifacts ("Great question!", "I hope this helps!", "Let me know if...")
-- Removed significance inflation ("testament", "pivotal moment", "evolving landscape", "vital role")
-- Removed promotional language ("groundbreaking", "nestled", "seamless, intuitive, and powerful")
-- Removed vague attributions ("Industry observers")
-- Removed superficial -ing phrases ("underscoring", "highlighting", "reflecting", "contributing to")
-- Removed negative parallelism ("It's not just X; it's Y")
-- Removed rule-of-three patterns and synonym cycling ("catalyst/partner/foundation")
-- Removed false ranges ("from X to Y, from A to B")
-- Removed em dashes, emojis, boldface headers, and curly quotes
-- Removed copula avoidance ("serves as", "functions as", "stands as") in favor of "is"/"are"
-- Removed formulaic challenges section ("Despite challenges... continues to thrive")
-- Removed knowledge-cutoff hedging ("While specific details are limited...")
-- Removed excessive hedging ("could potentially be argued that... might have some")
-- Removed filler phrases ("In order to", "At its core")
-- Removed generic positive conclusion ("the future looks bright", "exciting times lie ahead")
-- Made the voice more personal and less "assembled" (varied rhythm, fewer placeholders)
+- Removed chatbot artifacts ("We hope this resonates", "let us know if you'd like to learn more")
+- Removed significance inflation ("groundbreaking", "testament", "pivotal milestone")
+- Removed promotional language ("vibrant", "seamless", "boasts", "thrilled to announce")
+- Removed copula avoidance ("serves as", "stands as") → replaced with "is"
+- Removed superficial -ing phrases ("reducing friction", "cultivating alignment")
+- Removed vague attributions ("Industry observers have noted", "it has been shown")
+- Removed "it is worth noting" meta-commentary
+- Removed emoji headers and bold inline-header list format
+- Removed filler transition ("Furthermore")
+- Removed negative parallelism ("It's not just X, it's Y")
+- Removed rule of three bullet structure
+- Removed generic conclusion ("the future of work is here")
+- Added a real point of view and specific framing ("I know that sounds like something you've heard before")
 
 
 ## Reference
 
-This skill is based on [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup. The patterns documented there come from observations of thousands of instances of AI-generated text on Wikipedia.
+The patterns in this skill are based on research into how AI writing systems produce text — specifically, the tendency of large language models to default toward statistically common phrasing, structure, and vocabulary.
 
-Key insight from Wikipedia: "LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."
+The primary research source is [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), a publicly maintained guide from WikiProject AI Cleanup, compiled from observations of thousands of AI-generated texts.
 
-**Original patterns (1–25):** Based on Wikipedia's Signs of AI writing guide, originally compiled by [blader](https://github.com/blader/humanizer).
+Key insight: *"LLMs use statistical algorithms to guess what should come next. The result tends toward the most statistically likely result that applies to the widest variety of cases."* This is why AI writing feels generic — it's optimized for the average, not for the specific.
 
-**Extended patterns (26–33) and v3.0.0 improvements:** Added by [Gaurav Jain](https://github.com/gauravjain0377) — [github.com/gauravjain0377/humanwrites](https://github.com/gauravjain0377/humanwrites)
+**HumanWrites** extends this research with 8 additional patterns observed in real-world AI-generated content: passive voice overuse, filler transitions, formulaic closers, rhetorical questions, over-explanation, list overuse, meta-commentary phrases, and present perfect tense overuse.
+
+Built and maintained by [Gaurav Jain](https://github.com/gauravjain0377) — [github.com/gauravjain0377/humanwrites](https://github.com/gauravjain0377/humanwrites)
