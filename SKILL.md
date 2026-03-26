@@ -1,6 +1,6 @@
 ---
 name: humanwrites
-version: 3.0.0
+version: 2.0.3
 description: |
   Turn AI-generated text into authentic, human-sounding writing. Detects and
   fixes 33 known AI writing patterns — from inflated language and em dash overuse

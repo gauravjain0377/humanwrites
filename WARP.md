@@ -8,7 +8,7 @@ A **Claude Code skill** for humanizing AI-generated text — implemented entirel
 
 **Author:** [Gaurav Jain](https://github.com/gauravjain0377)  
 **Repo:** https://github.com/gauravjain0377/humanwrites  
-**Version:** 1.0.0
+**Version:** 2.0.3
 
 ---
 

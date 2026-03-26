@@ -4,7 +4,7 @@
 
 ### Strip the AI. Keep the meaning. Add the soul.
 
-[![Version](https://img.shields.io/badge/version-3.0.0-7c3aed?style=flat-square)](https://github.com/gauravjain0377/humanwrites)
+[![Version](https://img.shields.io/badge/version-2.0.3-7c3aed?style=flat-square)](https://github.com/gauravjain0377/humanwrites)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Claude Skill](https://img.shields.io/badge/Claude-Skill-orange?style=flat-square)](SKILL.md)
 [![Patterns](https://img.shields.io/badge/AI%20Patterns-33-brightgreen?style=flat-square)](SKILL.md)
@@ -165,27 +165,29 @@ Before a full pass, check for these red flags:
 
 ## Full Example
 
+This is a typical LinkedIn post written with AI help — and what it looks like after running `/humanwrites` on it.
+
 **Before (AI-generated):**
 
-> Great question! Here is an essay on this topic. I hope this helps!
+> It is worth noting that professional growth is rarely a linear journey. In today's rapidly evolving landscape, those who seek to foster a growth mindset stand as examples of resilience and commitment to excellence.
 >
-> AI-assisted coding serves as an enduring testament to the transformative potential of large language models, marking a pivotal moment in the evolution of software development. In today's rapidly evolving technological landscape, these groundbreaking tools—nestled at the intersection of research and practice—are reshaping how engineers ideate, iterate, and deliver, underscoring their vital role in modern workflows.
+> It's not just about the skills you acquire — it's about the person you're becoming. The interplay between continuous learning, adaptability, and cross-functional collaboration cannot be understated. Furthermore, professionals who align with these values are better positioned to navigate the complexities of modern career development.
 >
-> - 💡 **Speed:** Code generation is significantly faster, reducing friction and empowering developers.
-> - 🚀 **Quality:** Output quality has been enhanced through improved training, contributing to higher standards.
-> - ✅ **Adoption:** Usage continues to grow, reflecting broader industry trends.
+> - 💡 **Continuous Learning:** Staying ahead requires a commitment to lifelong education and skill enhancement
+> - 🚀 **Adaptability:** Embracing change is crucial to remaining relevant in a dynamic environment
+> - ✅ **Collaboration:** Working cross-functionally ensures alignment and drives better outcomes
 >
-> In conclusion, the future looks bright. Exciting times lie ahead as we continue this journey toward excellence. Let me know if you'd like me to expand on any section!
+> In conclusion, the future belongs to those willing to invest in themselves. I hope this resonates with you. Let me know your thoughts in the comments below!
+
+**Patterns found:** `It is worth noting` · `rapidly evolving landscape` · `not just about X, it's about Y` · `Furthermore` · `cannot be understated` · emoji headers · bold inline-header list · `In conclusion` · `I hope this resonates` · rule of three · copula avoidance (`stand as examples`)
 
 **After (Humanized):**
 
-> AI coding assistants can speed up the boring parts. They're great at boilerplate — config files, the glue code you don't want to write. Not so great at knowing when they're wrong.
+> I spent two years trying to become the kind of professional who had everything figured out. I didn't.
 >
-> I've accepted suggestions that compiled, passed lint, and still missed the point because I stopped paying attention. That's the real risk.
+> What actually helped: learning one concrete skill per quarter instead of committing to vague "growth," saying no to meetings where my only job was to listen, and asking questions out loud instead of pretending I already knew the answer.
 >
-> If you treat it like autocomplete and review everything, it's useful. If you use it to avoid thinking, it helps you ship bugs faster.
->
-> The only real backstop is tests. Without them, you're judging vibes.
+> None of that is new advice. But it's different from what I was told when I started — which was mostly to work hard and stay visible. Visibility without something real behind it is just noise in a louder room.
 
 ---
 
@@ -202,13 +204,15 @@ Found a new AI writing pattern? Open a PR:
 
 ## Version History
 
-- **3.0.0** — 8 new patterns (26–33): passive voice, filler transitions, "in conclusion" closers, rhetorical questions, over-explaining, list overuse, "it is worth noting", present perfect overuse. New Quick Scan checklist. Tone Preservation guide. Full README rewrite. *(Gaurav Jain)*
-- **2.3.0** — Added pattern #25: hyphenated word pair overuse *(blader)*
-- **2.2.0** — Added final "obviously AI generated" audit + second-pass rewrite prompts *(blader)*
-- **2.1.1** — Fixed pattern #18 example (curly quotes vs straight quotes) *(blader)*
-- **2.1.0** — Before/after examples for all 24 patterns *(blader)*
-- **2.0.0** — Complete rewrite based on raw Wikipedia article content *(blader)*
-- **1.0.0** — Initial release *(blader)*
+- **2.0.3** — Added 8 new patterns (26–33): passive voice, filler transitions, "in conclusion" closers, rhetorical questions, over-explaining, list overuse, "it is worth noting", present perfect overuse
+- **2.0.2** — Added Tone Preservation guide and Quick Scan checklist
+- **2.0.1** — Improved before/after examples for patterns #3, #7, and #11. Fixed curly quotes example (#18)
+- **2.0.0** — Major rewrite. Added personality and soul section. Added self-audit step ("What makes this obviously AI generated?") and second-pass rewrite. Restructured output format
+- **1.4.0** — Added pattern #25: hyphenated word pair overuse. Minor wording fixes across existing examples
+- **1.3.0** — Added filler and hedging patterns (#22–24): filler phrases, excessive hedging, generic conclusions
+- **1.2.0** — Added communication patterns (#19–21): chatbot artifacts, knowledge-cutoff disclaimers, sycophantic tone
+- **1.1.0** — Added before/after examples for all 18 patterns. Reorganized into Content, Language, and Style sections
+- **1.0.0** — Initial release. 18 patterns based on Wikipedia's Signs of AI writing guide
 
 ---
 
@@ -216,7 +220,6 @@ Found a new AI writing pattern? Open a PR:
 
 - [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) — Primary source
 - [WikiProject AI Cleanup](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_AI_Cleanup) — Maintaining organization
-- Original skill (v1–v2.3): [blader/humanizer](https://github.com/blader/humanizer)
 
 ---
 
