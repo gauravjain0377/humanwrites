@@ -4,7 +4,7 @@
 
 ### Strip the AI. Keep the meaning. Add the soul.
 
-[![Version](https://img.shields.io/badge/version-2.0.3-7c3aed?style=flat-square)](https://github.com/gauravjain0377/humanwrites)
+[![Version](https://img.shields.io/badge/version-2.0.4-7c3aed?style=flat-square)](https://github.com/gauravjain0377/humanwrites)
 [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
 [![Claude Skill](https://img.shields.io/badge/Claude-Skill-orange?style=flat-square)](SKILL.md)
 [![Patterns](https://img.shields.io/badge/AI%20Patterns-33-brightgreen?style=flat-square)](SKILL.md)
@@ -29,10 +29,13 @@ Based on [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikip
 
 ### Method 1 — Claude Web UI *(claude.ai)*
 
-1. Click the green **Code** button at the top of this repository and select **Download ZIP**, then extract the folder.
-2. Open [claude.ai](https://claude.ai) and create a new **Project**.
-3. Drag and drop the extracted `humanwrites` files into your **Project Knowledge**.
-4. Done! Any chat within that project will automatically understand how to rewrite your text without needing to prompt it every time.
+1. Click the green **Code** button at the top of this repository and select **Download ZIP**.
+2. Open [claude.ai](https://claude.ai/new).
+3. Go to **Customize** → **Skills** → click **+** to upload a skill.
+4. Upload the ZIP file you just downloaded and you're done!
+5. Now, simply type `/humanwrites` in any chat to humanize your text.
+
+*(Note: If you examine `SKILL.md`, you'll notice an `allowed-tools` section in the frontmatter. These are specific to Claude Code and have no effect in the Claude Web UI. They are harmless, so you can safely leave them in.)*
 
 ---
 
@@ -116,7 +119,7 @@ AI avoids simple words, repeats ideas with synonyms, and forces "impressive" str
 
 ### 📌 Style
 AI overuses formatting signals to look organized and punchy.
-> *Watch for:* em dashes (—) everywhere · **bolded every phrase** · 🚀 emojis in content · Title Case Every Heading · `cross-functional` hyphenation
+> *Watch for:* em dashes (—) everywhere · **bolded every phrase** · 🚀 emojis in content · Title Case Every Heading · `cross-functional`, `data-driven`, `high-quality` used repeatedly
 
 ### 📌 Communication
 AI chatbot phrases that get copy-pasted into real content.
@@ -126,7 +129,7 @@ AI chatbot phrases that get copy-pasted into real content.
 AI pads length without adding meaning.
 > *Words to watch:* `In order to`, `Due to the fact that`, `could potentially possibly`, `The future looks bright`, `Exciting times lie ahead`
 
-### 📌 New patterns (v2.0.3)
+### 📌 New patterns (v2.0.4)
 Freshly added — often missed by other tools.
 > *Watch for:* `It was determined that` (passive) · `Furthermore / Moreover` openers · `In conclusion` closers · rhetorical questions as transitions · `It is worth noting` · `has become / have emerged` (present perfect overuse)
 
@@ -152,6 +155,8 @@ This is a typical LinkedIn post written with AI help — and what it looks like 
 
 **Patterns found:** `It is worth noting` · `rapidly evolving landscape` · `not just about X, it's about Y` · `Furthermore` · `cannot be understated` · emoji headers · bold inline-header list · `In conclusion` · `I hope this resonates` · rule of three · copula avoidance (`stand as examples`)
 
+*(Note: Because the original text was heavily AI-generated "slop" with no real substance, humanizing it for a personal LinkedIn post required stripping away the generic advice and replacing it with a specific, personal anecdote that conveys the same underlying message. This is why the voice shifts so significantly.)*
+
 **After (Humanized):**
 
 > I spent two years trying to become the kind of professional who had everything figured out. I didn't.
@@ -166,15 +171,17 @@ This is a typical LinkedIn post written with AI help — and what it looks like 
 
 Found a new AI writing pattern? Open a PR:
 
-1. Add it to `SKILL.md` under the appropriate section with a Before/After example
-2. Add a row to the pattern table in `README.md`
-3. Bump the version in both files (patch for a minor fix, minor for a new pattern)
-4. Add a note to the version history below
+1. Add it to `SKILL.md` under the appropriate section with a Before/After example.
+2. Update the total pattern count (currently 33) across `README.md` and `SKILL.md`.
+3. If it's a very common red flag, add a row to the **Quick Scan** table in `README.md`.
+4. Bump the version in both files (patch for a minor fix, minor for a new pattern).
+5. Add a note to the version history below.
 
 ---
 
 ## Version History
 
+- **2.0.4** — Fixed Pattern #25 (hyphens), added context note to Pattern #18 (curly quotes), clarified Process/Output Format alignment, explained README example voice shift, added allowed-tools note for web UI users
 - **2.0.3** — Added 8 new patterns (26–33): passive voice, filler transitions, "in conclusion" closers, rhetorical questions, over-explaining, list overuse, "it is worth noting", present perfect overuse
 - **2.0.2** — Added Tone Preservation guide and Quick Scan checklist
 - **2.0.1** — Improved before/after examples for patterns #3, #7, and #11. Fixed curly quotes example (#18)

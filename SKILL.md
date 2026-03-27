@@ -1,6 +1,6 @@
 ---
 name: humanwrites
-version: 2.0.3
+version: 2.0.4
 description: |
   Turn AI-generated text into authentic, human-sounding writing. Detects and
   fixes 33 known AI writing patterns — from inflated language and em dash overuse
@@ -318,7 +318,7 @@ Before rewriting, identify the intended register. This shapes every decision.
 
 ### 18. Curly Quotation Marks
 
-**Problem:** ChatGPT uses curly quotes (“...”) instead of straight quotes ("...").
+**Problem:** ChatGPT uses curly quotes (“...”) instead of straight quotes ("..."). *Note: This is only a "red flag" in plain text, code, or Markdown where straight quotes are standard. In Word documents, published writing, or formal web content, curly quotes are typographically correct and should be kept.*
 
 **Before:**
 > He said “the project is on track” but others disagreed.
@@ -405,13 +405,13 @@ Before rewriting, identify the intended register. This shapes every decision.
 
 **Words to watch:** third-party, cross-functional, client-facing, data-driven, decision-making, well-known, high-quality, real-time, long-term, end-to-end
 
-**Problem:** AI hyphenates common word pairs with perfect consistency. Humans rarely hyphenate these uniformly, and when they do, it's inconsistent. Less common or technical compound modifiers are fine to hyphenate.
+**Problem:** AI leans heavily on hyphenated compound modifiers to sound professional. Removing the hyphens creates grammatical errors (e.g., "high quality report" is wrong; "high-quality report" is correct). The fix is to use simpler words or be specific about what the modifier actually means, not to merely strip the hyphens.
 
 **Before:**
 > The cross-functional team delivered a high-quality, data-driven report on our client-facing tools. Their decision-making process was well-known for being thorough and detail-oriented.
 
 **After:**
-> The cross functional team delivered a high quality, data driven report on our client facing tools. Their decision making process was known for being thorough and detail oriented.
+> The main team delivered a solid, usage-based report on our external tools. They were known for making thorough decisions.
 
 
 ## ADDITIONAL PATTERNS
@@ -551,6 +551,7 @@ Before rewriting, identify the intended register. This shapes every decision.
 7. Answer briefly with the remaining tells (if any)
 8. Prompt: "Now make it not obviously AI generated."
 9. Present the final version (revised after the audit)
+10. Provide a brief summary of changes made (optional, if helpful)
 
 ## Output Format
 
