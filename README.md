@@ -27,30 +27,24 @@ Based on [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikip
 
 ## Installation
 
-### Method 1 — Upload directly in Claude *(easiest, no terminal needed)*
+### Method 1 — Claude Web UI *(claude.ai)*
 
-1. [Download `SKILL.md`](https://raw.githubusercontent.com/gauravjain0377/humanwrites/main/SKILL.md) — right-click → Save As
-2. Open [claude.ai](https://claude.ai) → click your profile → **Customize Claude**
-3. Go to **Skills** → click **+** → **Upload a skill**
-4. Select the `SKILL.md` file you just downloaded
-5. Done — use `/humanwrites` in any Claude conversation
-
-> **That's it.** No terminal, no commands. Just download one file and upload it.
+1. Click the green **Code** button at the top of this repository and select **Download ZIP**, then extract the folder.
+2. Open [claude.ai](https://claude.ai) and create a new **Project**.
+3. Drag and drop the extracted `humanwrites` files into your **Project Knowledge**.
+4. Done! Any chat within that project will automatically understand how to rewrite your text without needing to prompt it every time.
 
 ---
 
-### Method 2 — Terminal install *(Claude Code / developers)*
+### Method 2 — Claude Code *(Terminal)*
 
+**Option A: Simple Drag & Drop**
+1. Download the ZIP and extract it.
+2. Move the entire `humanwrites` folder into your `~/.claude/skills/` directory.
+
+**Option B: Terminal Install**
 ```bash
 git clone https://github.com/gauravjain0377/humanwrites.git ~/.claude/skills/humanwrites
-```
-
-**Manual (skill file only):**
-
-```bash
-mkdir -p ~/.claude/skills/humanwrites
-curl -o ~/.claude/skills/humanwrites/SKILL.md \
-  https://raw.githubusercontent.com/gauravjain0377/humanwrites/main/SKILL.md
 ```
 
 **Update to the latest version:**
